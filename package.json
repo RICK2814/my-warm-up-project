@@ -1,0 +1,36 @@
+{
+  "name": "company-registration-verification-module",
+  "version": "1.0.0",
+  "description": "A complete solution for company registration, login, and profile management with multi-step registration form and dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "build": "cd backend && npm run build",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/company-registration-verification-module.git"
+  },
+  "keywords": [
+    "company",
+    "registration",
+    "authentication",
+    "dashboard",
+    "react",
+    "express",
+    "postgresql",
+    "firebase",
+    "cloudinary"
+  ],
+  "author": "Your Name",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/your-username/company-registration-verification-module/issues"
+  },
+  "homepage": "https://github.com/your-username/company-registration-verification-module#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

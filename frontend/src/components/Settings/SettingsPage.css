@@ -1,0 +1,151 @@
+.settings-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.settings-page h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.settings-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-button.active {
+  color: #4CAF50;
+  border-bottom-color: #4CAF50;
+}
+
+.tab-button:hover {
+  color: #4CAF50;
+}
+
+.settings-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-edit-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.security-settings .setting-item,
+.notifications-settings .setting-item {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.security-settings .setting-item:last-child,
+.notifications-settings .setting-item:last-child {
+  border-bottom: none;
+}
+
+.security-settings h3,
+.notifications-settings h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.notification-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.notification-option label {
+  margin-left: 10px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.profile-edit-form .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.profile-edit-form .form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.profile-edit-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-edit-form .form-group input,
+.profile-edit-form .form-group select,
+.profile-edit-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.profile-edit-form .form-group input.error,
+.profile-edit-form .form-group select.error,
+.profile-edit-form .form-group textarea.error {
+  border-color: #f44336;
+}
+
+.profile-edit-form .form-group .error-message {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .profile-edit-form .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .settings-tabs {
+    flex-direction: column;
+  }
+  
+  .tab-button {
+    border-bottom: 1px solid #ddd;
+    border-right: none;
+  }
+  
+  .tab-button.active {
+    border-bottom-color: #4CAF50;
+  }
+}
